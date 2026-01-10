@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<h1>List of mangas</h1>
+		<div class="menu">
+			<li> <a href="about.html">About web-page   </a></li>
+			<li> <a href="index.html">Main    </a></li>
+			<li> <a href="catalog.html">catalog    </a></li>
+		</div>
+		<div id="results-info"></div>
+		<div id="cart-info" class="cart-info">Product in cart: 0</div>
+		<input type="number" id="min-price-input" placeholder="від 0 грн">
+		<div class="filtres">
+			<input type="text" id="search-input" placeholder="пошук...">
+			<select id="category-filter">
+				<option value="all"> all</option>
+				<option value="dark-fantasy">dark-fantasy</option>
+				<option value="samurai">samurai</option>
+				<option value="sport">sport</option>
+				<option value="magic">magic</option>
+				<option value="titan">titan</option>
+				<option value="pirates">pirates</option>
+				<option value="ninja">ninja</option>
+				<option value="viking">viking</option>			
+			</select>
+		</div>
+		<button id="del-from-cart">clear the cart</button>
+	</header>
+
+	<main>
+		<div id="products-container" class="products-container"></div>
+	</main>
+
+
+<footer>
+	<p>2025. made in WEB_PRO</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
