@@ -30,22 +30,30 @@ footer{
 	background-color:purple;
 }
 a{
+	padding-left: 15px;
+	border:0;
+	border-radius: 16px;
+	background-color: black;
 	text-align: center;
 	margin: 10px;
 	padding-right:20px;
-	color: lightgreen;
+	color:purple;
 	text-decoration: none;
 }
 #text{
 	max-width: 400px;
-	color: white;
+	color: purple;
 	text-align: left;
 }
-#img{
+#img1{
 	min-height: 500px;
 	min-width: 300px;
 }
-
+#img2{
+	align-items: margin-right;
+	min-height: 500px;
+	min-width: 300px;
+}
 .menu{
 	list-style: none;
 	justify-content: center;
@@ -57,9 +65,22 @@ main{
 }
 #main_div{
 	display: flex;
-	align-items: center;
+	text-align: center;
 	justify-content: space-between;
 	padding: 40px;
+}
+#main-li{
+	text-align: center;
+	display: flex;
+	flex-direction: row-reverse;
+	align-content: center;
+}
+#main-press{
+	border: 0;
+	border-radius: 14px;
+	background-color: purple;
+	color: black;
+	max-height: 10vh;
 }
 .products-container{
 	justify-content: center;
