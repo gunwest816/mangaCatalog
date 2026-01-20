@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>main page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FunPlay — игры дешевле</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header id="header_index">
-		<img src="imgs/comic.png" class="img">
-		<h1>List of mangas</h1>
+	<header class="main-header">
+  		<div class="logo">
+    		<img src="imgs/game.png">
+   			 <h1>FunPlay</h1>
+  		</div>
 
-		<ul class="menu">
-			<li> <a href="about.html">About web-page</a></li>
-			<li> <a href="index.html">Main</a></li>
-			<li> <a href="catalog.html">catalog</a></li>
-		</ul>
+  <ul class="menu">
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="index.html">Main</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+  </ul>
 	</header>
 
-	<div id="main_div"> <img src="imgs/123.gif" id="img1"><p id="text"> Hi! Welcome in my WebSite! Here you can find a lot of different type mangas. If you want check a catalog, press catalog above this text <li id="main-li"><a id="main-press" href="catalog.html"> Press, to see catalog</a></li></p><img src="imgs/L.gif" id="img2"></div>
-	<footer></footer>
-<script src="script.js"></script>
+<main class="hero">
+  <div class="hero-text">
+    <h2>Покупай игры дешевле, чем в Steam</h2>
+    <p>
+      FunPlay — магазин цифровых игр, аккаунтов и валют.
+      Быстро, безопасно и выгодно.
+    </p>
+    <a href="catalog.html" class="hero-btn">Перейти в каталог</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="imgs/hero.png">
+  </div>
+</main>
+
+<section class="features">
+  <div class="feature">
+    <h3> Низкие цены</h3>
+    <p>Игры дешевле, чем в Steam и Epic Games</p>
+  </div>
+
+  <div class="feature">
+    <h3> Быстро</h3>
+    <p>Моментальная выдача после покупки</p>
+  </div>
+
+  <div class="feature">
+    <h3> Безопасно</h3>
+    <p>Проверенные продавцы и защита сделок</p>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <p>© 2026 FunPlay. made in WEB_PRO</p>
+</footer>
+
 </body>
 </html>
