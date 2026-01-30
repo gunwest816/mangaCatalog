@@ -5,7 +5,7 @@ const products = [
 		price: 1299,
 		category: "action-adventure",
 		ageLimit: 16,
-		author: "Rockstar Gamess",
+		author: "Rockstar Games",
 		instock: true,		
 		discount: "-20%",
 		img: "imgs/GTA5.jpg",
