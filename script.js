@@ -68,7 +68,7 @@ const products = [
 		author: "Mojang studios",
 		instock: true,		
 		discount: "-10%",
-		img:"imgs/Minecraft.jpeg",
+		img:"imgs/minecraft.jpeg",
 		plot: "популярная игра-«песочница» с открытым миром из кубических блоков, где игроки добывают ресурсы, строят сооружения и исследуют процедурно генерируемые миры"
 	},
 	{
