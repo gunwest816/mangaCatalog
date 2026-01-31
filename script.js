@@ -95,6 +95,31 @@ const products = [
 		img:"imgs/dg.jpeg",
 		plot: "приключенческий экшен в постапокалиптическом открытом мире от третьего лица, где игрок в роли байкера Дикона Сент-Джона ищет смысл жизни",
 	},
+	{
+		id: 9,
+		title: "Assasin's Creed II",
+		price: 899,
+		category: "past",
+		ageLimit: 18,
+		author: "Ubisoft",
+		instock: true,		
+		discount: false,
+		img:"imgs/ac2.jpg",
+		plot: "В рамках сюжетной кампании Дезмонд Майлс, главный герой сюжетной линии в настоящем времени переживает воспоминания своего дальнего предка — Эцио Аудиторе, молодого флорентийского аристократа, ставшего впоследствии одним из величайших ассасинов",
+	},
+	{
+		id: 9,
+		title: "chilavry II",
+		price: 899,
+		category: "past",
+		ageLimit: 18,
+		author: "Torn Banner Studios",
+		instock: true,		
+		discount: false,
+		img:"imgs/chil.jpg",
+		plot: "многопользовательский слэшер от первого/третьего лица, вдохновленный средневековыми битвами из кинофильмов",
+	},
+
 ];
 let cart = [];
 const cartInfo = document.getElementById("cart-info");
@@ -126,7 +151,7 @@ function saveCart(){
 }
 
 function updateCartCount(){
-	cartInfo.textContent = `products in cart ${cart.length}`;
+	cartInfo.textContent = `товаров в корзине: ${cart.length}`;
 }
 function renderProducts(productsArray){
 productsArray.forEach(function(product){
@@ -136,8 +161,8 @@ productsArray.forEach(function(product){
 	card.innerHTML = `
 		<img src="${product.img}" class="product-img">
 		<h3>${product.title}</h3>
-		<p class="product-category">category: ${product.category}</p>
-		<p class="product-plot">plot: ${product.plot}</p>
+		<p class="product-category">жанр: ${product.category}</p>
+		<p class="product-plot">Про что: ${product.plot}</p>
 		<p class = "product-price">price: ${product.price} грн</p>
 		<button Class="add-to-card-btn">add to cart</button>
 	`;
@@ -158,7 +183,7 @@ document.getElementById("del-from-cart").addEventListener("click", function() {
 	cart = [];
 	saveCart()
 	updateCartCount();
-	cartInfo.textContent = `products in cart 0`
+	cartInfo.textContent = `продуктов в корзине`
 })
 
 function filterAndRender(){
@@ -177,9 +202,9 @@ function filterAndRender(){
 	productsContainer.innerHTML = "";
 	renderProducts(filteredProducts);
 	if (filteredProducts.length > 0) {
-		resultsInfo.textContent = `products found: ${filteredProducts.length}`;
+		resultsInfo.textContent = `найдено товаров: ${filteredProducts.length}`;
 	} else {
-		resultsInfo.textContent = "No found products were for your request.";
+		resultsInfo.textContent = "не найдено товаров по вашему запросу";
 	}
 }
 
