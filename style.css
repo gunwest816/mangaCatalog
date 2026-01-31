@@ -233,8 +233,7 @@ main{
   font-weight: bold;
 }
 .hero-img img {
-  padding-left:300px;
-  width: 60%;
+  max-width: 100%;
   height: auto;
   object-fit: covers;
 }
@@ -380,7 +379,6 @@ main{
     width: 100%;
   }
   .hero{
-    padding: 20px;
     text-align: center;
   }
   .hero h1{

@@ -164,7 +164,7 @@ productsArray.forEach(function(product){
 		<p class="product-category">жанр: ${product.category}</p>
 		<p class="product-plot">Про что: ${product.plot}</p>
 		<p class = "product-price">price: ${product.price} грн</p>
-		<button Class="add-to-card-btn">add to cart</button>
+		<button Class="add-to-card-btn">добавить в корзину</button>
 	`;
 
 	const addButton = card.querySelector(".add-to-card-btn");
