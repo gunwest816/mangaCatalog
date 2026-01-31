@@ -1,4 +1,5 @@
 body{
+  font-size: 24px;
   overflow-x:hidden ;
   overflow-y:auto ;
 	margin: 0;
@@ -18,7 +19,9 @@ header {
   padding: 25px;
 }
 .logo{
-	max-width: 60px;
+  display: flex;
+  align-items: right;
+	max-width: 10vh;
 }
 .menu {
   flex-wrap: wrap;
@@ -51,7 +54,7 @@ header {
 }
 .main-header {
   width: 100%;
-  background: linear-gradient(135deg, #ff9f1a, #ffb703);
+  background: linear-gradient(90deg, #ffb347, #ff7a18);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -230,9 +233,9 @@ main{
   font-weight: bold;
 }
 .hero-img img {
-  width: 100%;
+  padding-left:300px;
+  width: 60%;
   height: auto;
-  max-width: 100%;
   object-fit: covers;
 }
 .features {
@@ -256,24 +259,28 @@ main{
   background: #ffb703;
 }
 #del-from-cart{
-	background: black;
+	box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  background: black;
   color: #ccc;
-  padding: 8px 16px;
+  padding: 13px 26px;
   border-radius: 14px;
   text-decoration: none;
   transition: 0.2s;
 }
-#results-info,
 .cart-info {
   margin: 8px auto;
-  padding: 6px 14px;
-  width: 60px;
+  padding: 8px 17px;
+  max-width: 100px;
   font-size: 16px;
-  font-weight: 600;
   color: #fff;
   background: rgba(0, 0, 0, 0.35);
   border-radius: 20px;
 }
+#results-info{
+  text-align: center;
+  color: white;
+}
+
 .img{
 	margin-right: 150px;
 	max-height: 50px;
